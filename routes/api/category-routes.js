@@ -117,6 +117,7 @@ Book.update(
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  // reference found in 01-Activities/07-Ins_Update-Delete
   Book.destroy({
     where: {
       isbn: req.params.isbn,
