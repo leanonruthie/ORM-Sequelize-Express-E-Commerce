@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-// OFFICE HOUR QUESTION: is it all right to use async?
 
 router.get('/', async (req, res) => {
   // find all categories
@@ -21,7 +20,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
-    const categoryData = await Location.findByPk(req.params.id, {
+    const categoryData = await Category.findByPk(req.params.id, {
       include: [{ model: Product }]
     });
 
@@ -56,7 +55,8 @@ router.put('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    if (!categoryData[0]) {
+
+    if (!categoryData) {
       res.status(404).json({ message: 'No Category with this id!' });
       return;
     }
