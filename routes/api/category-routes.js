@@ -41,7 +41,8 @@ router.post('/', async (req, res) => {
   // create a new category
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
-    const categoryData = await Category.create(req.body);
+    const categoryData = await Category.create({
+      category_name: req.body.category_name});
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(400).json(err);
