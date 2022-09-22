@@ -20,10 +20,8 @@ THEN I am able to demonstrate the aforementioned CRUD operators of database appl
 ```
 
 ## Screenshot
-* Basic Insomnia Folder Structure Before Completion
-<img src="./Assets/Screen%20Shot%202022-09-20%20at%2011.41.32%20AM.png">
 * Final Insomnia Folder Structure Upon Completion
-[TBD]
+<img src="./Assets/Screen%20Shot%202022-09-22%20at%205.31.36%20PM.png">
 
 ## GitHub
 <a href="https://github.com/leanonruthie/ORM-Sequelize-Express-E-Commerce.git">https://github.com/leanonruthie/ORM-Sequelize-Express-E-Commerce.git</a>
