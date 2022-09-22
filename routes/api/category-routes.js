@@ -8,7 +8,9 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
-    const categoryData = await Category.findAll();
+    const categoryData = await Category.findAll({
+      include: [{ model: Product }]
+    });
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
