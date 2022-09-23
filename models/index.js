@@ -32,16 +32,16 @@ Product.belongsToMany(Tag, {
   // as: 'ProductTag_Product'
 
   through: ProductTag,
-  foreignKey:'product_id'
+  foreignKey: 'product_id'
 });
 
 // Tags belongToMany Products (through ProductTag)
 // WORK REFERENCE - basically all activities inside - RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities - indicate below
 Tag.belongsToMany(Product, {
   // Define the third table needed to store the foreign keys
-  
+
   // Below disabled items do not work smoothly for any "through" usage in api product-routes and tag-routes
-  
+
   // through: {
   //   model: ProductTag,
   //   unique: false
@@ -50,7 +50,7 @@ Tag.belongsToMany(Product, {
   // as: 'ProductTag_Tag'
 
   through: ProductTag,
-  foreignKey:'tag_id'
+  foreignKey: 'tag_id'
 });
 
 module.exports = {
