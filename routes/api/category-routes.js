@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
     const allCategories = await Category.findAll({
-      include: [{ model: Product }]
+      include: [{ model: Product }],
     });
     res.status(200).json(allCategories);
   } catch (err) {
@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
     const categoryById = await Category.findByPk(req.params.id, {
-      include: [{ model: Product }]
+      include: [{ model: Product }],
     });
 
     if (!categoryById) {
@@ -42,7 +42,8 @@ router.post('/', async (req, res) => {
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
     const newCategory = await Category.create({
-      category_name: req.body.category_name});
+      category_name: req.body.category_name,
+    });
     res.status(200).json(newCategory);
   } catch (err) {
     res.status(400).json(err);
@@ -75,8 +76,8 @@ router.delete('/:id', async (req, res) => {
   try {
     const deleteCategoryById = await Category.destroy({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+      },
     });
 
     if (!deleteCategoryById) {
@@ -89,6 +90,5 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 module.exports = router;
