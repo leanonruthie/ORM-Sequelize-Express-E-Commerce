@@ -1,6 +1,5 @@
 # ORM-Sequelize-Express-E-Commerce
 
-
 ## User Story
 
 ```md
