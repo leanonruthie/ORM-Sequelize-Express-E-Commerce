@@ -1,4 +1,4 @@
-# 13 Object-Relational Mapping (ORM): E-Commerce Back End
+# ORM-Sequelize-Express-E-Commerce
 
 
 ## User Story
