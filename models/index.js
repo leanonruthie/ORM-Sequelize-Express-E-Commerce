@@ -8,6 +8,8 @@ const ProductTag = require('./ProductTag');
 // WORK REFERENCE - basically all activities inside - RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities - indicate below
 Product.belongsTo(Category, {
   foreignKey: 'category_id',
+  // added by askBCS since my I was receiving foreign key constraint errors and now everything is fine
+  onDelete: 'CASCADE',
 });
 
 // Categories have many Products
