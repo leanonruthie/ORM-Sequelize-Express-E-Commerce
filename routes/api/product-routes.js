@@ -116,7 +116,7 @@ router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
   // RUT-VIRT-FSF-PT-06-2022-U-LOLC/13-ORM/01-Activities/28-Stu_Mini-Project
   try {
-    const deleteProductById = await Category.destroy({
+    const deleteProductById = await Product.destroy({
       where: {
         id: req.params.id
       }
