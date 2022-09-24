@@ -29,5 +29,5 @@ THEN I am able to demonstrate the aforementioned CRUD operators of database appl
 Please see how Insomnia is used to test functioning Express + Sequelize below:
 
 
-https://user-images.githubusercontent.com/107362875/192077993-a80f5077-44e5-4134-9427-41c018e56df4.mp4
+https://user-images.githubusercontent.com/107362875/192078051-e5be4bec-87e7-414d-8a84-45d6f63c4c88.mp4
 
