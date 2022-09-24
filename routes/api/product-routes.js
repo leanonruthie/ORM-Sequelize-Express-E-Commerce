@@ -78,6 +78,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     },
   })
+  // will ask why product is declared here but not used in starter code
     .then((product) => {
       // find all associated tags from ProductTag
       return ProductTag.findAll({ where: { product_id: req.params.id } });
