@@ -23,7 +23,7 @@ THEN I am able to demonstrate the aforementioned CRUD operators of database appl
 <img src="./Assets/Screen%20Shot%202022-09-22%20at%205.31.36%20PM.png">
 
 ## GitHub
-<a href="https://github.com/leanonruthie/ORM-Sequelize-Express-E-Commerce.git">https://github.com/leanonruthie/ORM-Sequelize-Express-E-Commerce.git</a>
+[My GitHub](https://github.com/leanonruthie/ORM-Sequelize-Express-E-Commerce.git)
 
 ## Video Demo
 Please see how Insomnia is used to test functioning Express + Sequelize below:
